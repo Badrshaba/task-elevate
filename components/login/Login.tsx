@@ -21,17 +21,17 @@ interface LoginFormValues {
 export default function LoginForm() {
   const router = useRouter()
   const handleSubmit = async (formData:yup.InferType <typeof validationSchema>) => {
-    try {
-      const {data} = await api.post('/signin',formData)
-      console.log(data);
-      toast.success('success login');
-      router.push('/')
+    // try {
+    //   const {data} = await api.post('/signin',formData)
+    //   console.log(data);
+    //   toast.success('success login');
+    //   router.push('/')
       
-    } catch (error:any) {
-      console.log(error);
-      toast.error(error?.response?.data?.message || 'Something went wrong')
-    }
-   // signIn('credentials', {...formData,callbackUrl:'/'})
+    // } catch (error:any) {
+    //   console.log(error);
+    //   toast.error(error?.response?.data?.message || 'Something went wrong')
+    // }
+    signIn('credentials', {...formData,callbackUrl:'/'})
   };
   let form = useFormik<yup.InferType <typeof validationSchema>>({
     initialValues:{
