@@ -1,0 +1,25 @@
+.main_sidBar{
+    font-weight: 600;
+    font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+    color: var(--FontColor);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding-left: 0.5rem /* 8px */;
+    padding-right: 0.5rem /* 8px */;
+    border-radius: 0.5rem /* 8px */;
+    padding-top: 0.25rem /* 4px */;
+    padding-bottom: 0.25rem /* 4px */;
+    width: fit-content;
+}
+.icon {
+    color: var(--Main);
+}
+.main_sidBar:hover {
+    color: white !important;
+    cursor: pointer;
+    background-color: var(--Main);
+
+}
+
