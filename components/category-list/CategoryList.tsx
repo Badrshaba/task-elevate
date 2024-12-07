@@ -1,5 +1,3 @@
-import Image from "next/image";
-import quiz from "../../public/quize.jpg";
 import { useRouter } from "next/navigation";
 const CategoryList = () => {
   const router = useRouter()
